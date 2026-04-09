@@ -36,13 +36,9 @@ public class PracticeProblem {
         int sum = 0;
         int start;
         int end;
-        if (num1 > num2) {
-            start = num2;
-            end = num1;
-        } else {
-            start = num1;
-            end = num2;
-        }
+
+        start = Math.min(num1, num2);
+		end = Math.max(num1, num2);
 
 		if (start%2!=0) {
 			start++;
